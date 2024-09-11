@@ -2,7 +2,8 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const app = require('./app');
 const PORT = process.env.PORT || 5000;
-
+const cors = require('cors');
+app.use(cors());
 // MongoDB connection URI
 const mongoURI = process.env.MONGO_URI;
 
