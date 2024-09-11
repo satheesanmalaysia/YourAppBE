@@ -12,4 +12,4 @@ app.use(express.json());
 app.use('/api', require('./routes/auth'));
 app.use('/api', require('./routes/profile'));
 
-module.exports = app;
+module.exports = app; 
