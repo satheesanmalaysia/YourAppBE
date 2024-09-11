@@ -4,7 +4,7 @@ const app = require('./app');
 const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://yourfrontendapp.com'], // Frontend URLs
+    origin: ['http://localhost:3000', 'https://yourfrontendapp.com','https://yourapp-fe.vercel.app'], // Frontend URLs
     credentials: true,
   }));
 // MongoDB connection URI

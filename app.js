@@ -3,7 +3,7 @@ const connectDB = require('./config/db');
 const app = express();
 const cors = require('cors');
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://yourfrontendapp.com'], // Frontend URLs
+    origin: ['http://localhost:3000', 'https://yourfrontendapp.com' , 'https://yourapp-fe.vercel.app'], // Frontend URLs
     credentials: true,
   }));
 // Connect Database
