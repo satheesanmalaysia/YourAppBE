@@ -39,7 +39,7 @@ router.patch('/updateProfile', auth, async (req, res) => {
     user.profile = { ...user.profile, username, gender, birthday, horoscope, zodiac, height, weight, interests };
     await user.save();
 
-    res.json(user.profile);
+    res.json(user);
   } catch (err) {
     res.status(500).send('Server error');
   }
