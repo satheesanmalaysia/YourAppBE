@@ -1,7 +1,11 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const app = express();
-
+const cors = require('cors');
+app.use(cors({
+    origin: ['http://localhost:3000', 'https://yourfrontendapp.com'], // Frontend URLs
+    credentials: true,
+  }));
 // Connect Database
 connectDB();
 
