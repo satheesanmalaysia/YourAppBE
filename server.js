@@ -12,7 +12,7 @@ if (!mongoURI) {
 }
 
 // Set Mongoose options
-mongoose.set('strictQuery', false); // or true, depending on your preference
+//mongoose.set('strictQuery', false); // or true, depending on your preference
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, {
